@@ -9,8 +9,8 @@ fetch("/portraits.json")
 			const name = p.name;
 			const years = p.years;
 
-			const imgPath = `/assets/portraits/${name}.jpg`;
-			const sheetPath = `/sheet/${name}/index.html`;
+			const imgPath = `portraits/${name}.jpg`;
+			const sheetPath = `../sheet/${name}/index.html`;
 
 			const card = document.createElement("a");
 			card.href = sheetPath;
